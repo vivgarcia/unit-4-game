@@ -6,9 +6,37 @@
     <title>Crystal Collector</title>
     <!-- reset stylesheet -->
     <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo|Lora:400,700|Open+Sans&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Crystal Collector</h1>
+    </header>
+    <div class="instructions">
+        You will be given a random number at the start of the game.
+        <br>
+        There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.
+        <br>
+        You win the game by matching your total score to random number, you lose the game if your total score goes above your random number.
+        <br>
+        The value of the crystal is hidden until you click on it.
+        <br>
+        Each time when the game starts, the game will change the value of each crystal.
+    </div>
+    <div class="total-score">
+        Your total score is:<span id ="totalScore"> </span>
+    </div>
+    <div class="gemsContainer">
+        <img src="assets/images/ruby.svg" id="rubyGem" width="100" alt="ruby gemstone">
+        <img src="assets/images/citrine.svg" id="citrineGem" width="100" alt="citrine gemstone">
+        <img src="assets/images/amethyst.svg" id="amethystGem" width="100" alt="amethyst gemstone">
+        <img src="assets/images/carnelian.svg" id="carnelianGem" width="100" alt="carnelian gemstone">
+    </div>
+
+
 </body>
 <!-- jQuery CDN -->
 <script

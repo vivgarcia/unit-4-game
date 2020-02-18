@@ -1,0 +1,31 @@
+body {
+    background-color: yellow;
+}
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 5rem;
+    font-family: 'Boogaloo', cursive;
+    margin-bottom: 10px;
+
+}
+.instructions {
+    text-align: center;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    border: solid 1px black;
+    border-radius: 24px;
+    padding: 20px;
+}
+.total-score{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Boogaloo', cursive;
+}
+.gemsContainer  {
+   text-align: center;
+}
