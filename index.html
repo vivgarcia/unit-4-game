@@ -25,9 +25,19 @@
         The value of the crystal is hidden until you click on it.
         <br>
         Each time when the game starts, the game will change the value of each crystal.
+        <br>
+        <h4>Score to match:
+        <br>
+        <span id="randomNumber"> </span></h4>
     </div>
     <div class="total-score">
-        Your total score is:<span id ="totalScore"> </span>
+        Your total score is:
+        <br>
+        <span id ="totalScore"> </span>
+    </div>
+    <div class="score">
+        <div class="wins">Wins: <span id="winsCounter"> </span></div>
+        <div class="losses">Losses: <span id="lossesCounter"> </span></div>
     </div>
     <div class="gemsContainer">
         <img src="assets/images/ruby.svg" id="rubyGem" width="100" alt="ruby gemstone">
@@ -43,4 +53,6 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+
+<script src="assets/javascript/game.js"></script>
 </html>
