@@ -13,32 +13,39 @@ var totalScore = 0;
 //write score to the DOM
 $("#totalScore").text(totalScore);
 //functions for game play
-function someFunction(){
+function gamePlay(){
     if(totalScore === randomNumber){
-        console.log("won");
+        alert("You won!");
+        wins++;
+        $("#winsCounter").text(wins);
     }else if(totalScore >= randomNumber){
-        console.log("hey");
+        console.log("you went over");
+        losses++;
+        $("#lossesCounter").text(losses);
     }
 }
 //assign gems click functions and add their numbers to total score
 $("#rubyGem").on("click", function(){
     totalScore = totalScore + ruby;
     $("#totalScore").text(totalScore);
-    someFunction();
+    gamePlay();
 })
 
 $("#citrineGem").on("click", function(){
     totalScore = totalScore + citrine;
     $("#totalScore").text(totalScore);
+    gamePlay();
 })
 
 $("#amethystGem").on("click", function(){
     totalScore = totalScore + amethyst;
     $("#totalScore").text(totalScore);
+    gamePlay();
 })
 
 $("#carnelianGem").on("click", function(){
     totalScore = totalScore + carnelian;
     $("#totalScore").text(totalScore);
+    gamePlay();
 })
 
