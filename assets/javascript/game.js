@@ -11,18 +11,24 @@ var wins = 0;
 var losses = 0;
 var totalScore = 0;
 
+$("#totalScore").text(totalScore);
+
 $("#rubyGem").on("click", function(){
-    console.log(ruby);
+    totalScore = totalScore + ruby;
+    $("#totalScore").text(totalScore);
 })
 
 $("#citrineGem").on("click", function(){
-    console.log(citrine);
+    totalScore = totalScore + citrine;
+    $("#totalScore").text(totalScore);
 })
 
 $("#amethystGem").on("click", function(){
-    console.log(amethyst);
+    totalScore = totalScore + amethyst;
+    $("#totalScore").text(totalScore);
 })
 
 $("#carnelianGem").on("click", function(){
-    console.log(carnelian);
+    totalScore = totalScore + carnelian;
+    $("#totalScore").text(totalScore);
 })
