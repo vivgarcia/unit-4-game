@@ -10,3 +10,19 @@ var carnelian = Math.floor(Math.random() * 12) + 1;
 var wins = 0;
 var losses = 0;
 var totalScore = 0;
+
+$("#rubyGem").on("click", function(){
+    console.log(ruby);
+})
+
+$("#citrineGem").on("click", function(){
+    console.log(citrine);
+})
+
+$("#amethystGem").on("click", function(){
+    console.log(amethyst);
+})
+
+$("#carnelianGem").on("click", function(){
+    console.log(carnelian);
+})
