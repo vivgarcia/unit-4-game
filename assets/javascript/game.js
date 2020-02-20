@@ -12,16 +12,29 @@ var losses = 0;
 var totalScore = 0;
 //write score to the DOM
 $("#totalScore").text(totalScore);
+//function to reset game
+function reset(){
+    totalScore = 0;
+    $("#totalScore").text(" ");
+    randomNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
+    $('#randomNumber').html(randomNumber);
+    ruby = Math.floor(Math.random() * 12) + 1;
+    citrine = Math.floor(Math.random() * 12) + 1;
+    amethyst = Math.floor(Math.random() * 12) + 1;
+    carnelian = Math.floor(Math.random() * 12) + 1;
+}
 //functions for game play
 function gamePlay(){
     if(totalScore === randomNumber){
         alert("You won!");
         wins++;
         $("#winsCounter").text(wins);
+        reset();
     }else if(totalScore >= randomNumber){
-        console.log("you went over");
+        alert("You lose! Try again");
         losses++;
         $("#lossesCounter").text(losses);
+        reset();
     }
 }
 //assign gems click functions and add their numbers to total score
