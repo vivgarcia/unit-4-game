@@ -31,7 +31,7 @@ function gamePlay(){
         $("#winsCounter").text(wins);
         reset();
     }else if(totalScore >= randomNumber){
-        alert("You lose! Try again");
+        alert("You lose! Your final score was " + totalScore);
         losses++;
         $("#lossesCounter").text(losses);
         reset();
