@@ -56,4 +56,17 @@ h4 {
     .instructions{
         width: 90%;
     }
+    #rubyGem{
+        width: 75px;
+    }
+    #citrineGem{
+        width: 75px;
+    }
+    #amethystGem{
+        width: 75px;
+    }
+    #carnelianGem{
+        width: 75px;
+    }
+
 }
